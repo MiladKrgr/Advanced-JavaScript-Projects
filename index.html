@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en" data-theme="dark">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>User Identity & Theme Sync</title>
+  <link rel="stylesheet" href="assets/Style/style.css">
+</head>
+
+<body>
+  <main class="card">
+    <header class="card-header">
+      <span class="badge">LOCAL SYNC ACTIVE</span>
+      <h1 id="greeting-title">Welcome, Operative</h1>
+      <p class="subtitle">Persisted state managed via Web Storage API</p>
+    </header>
+
+    <section class="control-group">
+      <label for="username-input">Operator Identity</label>
+      <div class="input-wrapper">
+        <input type="text" id="username-input" placeholder="Enter your handle..." autocomplete="off">
+        <button id="save-name-btn" class="btn primary-btn">Save</button>
+      </div>
+    </section>
+
+    <section class="control-group">
+      <label>Visual Interface Theme</label>
+      <div class="theme-options">
+        <button class="theme-btn" id="obsidian-btn" data-theme="obsidian">Obsidian (Default)</button>
+        <button class="theme-btn" id="violet-btn" data-theme="neon-violet">Neon Violet</button>
+      </div>
+    </section>
+
+    <footer class="card-footer">
+      <button id="reset-btn" class="btn text-btn">Reset Stored Cache</button>
+    </footer>
+  </main>
+
+  <script src="assets/Js/script.js"></script>
+</body>
+
+</html>
